@@ -34,6 +34,9 @@
 ##----------------------------------------------------------------
 ##                        Some prep work                        --
 ##----------------------------------------------------------------
+
+print('Starting ...')
+
 rm(list = ls())
 curr_wd <- getwd()
 cat(paste('\nCurrent Working Dir --\n', curr_wd, '\n'),
@@ -57,3 +60,4 @@ if (length(new_packages)) {
 sapply(packages, library, character.only = T)
 
 options(stringsAsFactors = F)
+
