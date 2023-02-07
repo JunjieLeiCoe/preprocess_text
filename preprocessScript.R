@@ -48,8 +48,7 @@ packages <- c('plyr',
               'reshape2',
               'ggplot2',
               'readxl',
-              'openxlsx',
-              'naniar')
+              'openxlsx')
 
 new_packages <-
   packages[!(packages %in% installed.packages()[, "Package"])]
